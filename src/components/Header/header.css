@@ -1,0 +1,31 @@
+.headerNav {
+  padding: 1rem;
+}
+@media (min-width: 1280px) {
+  .headerNav {
+    border-bottom: 0px solid #E1E1E1;
+  }
+}
+.headerNav__container {
+  display: flex;
+  justify-content: space-between;
+}
+.headerNav__desktop-menu {
+  display: none;
+}
+@media (min-width: 1280px) {
+  .headerNav__desktop-menu {
+    display: flex;
+    width: 50%;
+    margin-right: 4rem;
+    justify-content: flex-end;
+    gap: 4rem;
+    align-items: center;
+  }
+}
+.headerNav__logo--image {
+  height: 20rem;
+  margin-left: -2rem;
+  margin-top: -4rem;
+  margin-bottom: -4rem;
+}/*# sourceMappingURL=header.css.map */

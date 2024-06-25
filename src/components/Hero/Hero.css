@@ -1,0 +1,22 @@
+.Hero {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: Black;
+  font-size: 5rem;
+  font-weight: bold;
+}
+@media (min-width: 1280px) {
+  .Hero {
+    display: flex;
+    border-bottom: 5px solid #E1E1E1;
+  }
+}
+
+.Hero__textBtn {
+  margin: 0 2rem;
+}/*# sourceMappingURL=Hero.css.map */

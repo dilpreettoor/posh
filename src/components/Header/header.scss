@@ -1,0 +1,38 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.headerNav {
+
+    @include desktop {
+        border-bottom: 0px solid #E1E1E1;
+    }
+    padding: 1rem;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__desktop-menu {
+        display: none;
+
+        @include desktop {
+            display: flex;
+            width: 50%;
+            margin-right: 4rem;
+            justify-content: flex-end;
+            gap: 4rem;
+            align-items: center;
+            
+        }
+    }
+
+
+    &__logo {
+        &--image {
+            height: 20rem;
+            margin-left: -2rem;
+            margin-top: -4rem;
+            margin-bottom: -4rem;
+          }
+    }
+}

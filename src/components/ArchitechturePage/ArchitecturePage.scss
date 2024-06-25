@@ -1,0 +1,26 @@
+@use '../../styles/mixins';
+.architecture-page {
+
+  @include mixins.desktop {
+    display: flex;
+    border-bottom: 5px solid #E1E1E1;
+    flex-direction: column;
+  }
+
+  &__wrapper {
+    width: 50%;
+    margin: 2rem;
+  }
+
+    h1 {
+      font-size: 3rem;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+  
+    p {
+      font-size: 2rem;
+      color: #666;
+      line-height: 1.5;
+    }
+  }

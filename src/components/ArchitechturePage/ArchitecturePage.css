@@ -1,0 +1,21 @@
+@media (min-width: 1280px) {
+  .architecture-page {
+    display: flex;
+    border-bottom: 5px solid #E1E1E1;
+    flex-direction: column;
+  }
+}
+.architecture-page__wrapper {
+  width: 50%;
+  margin: 2rem;
+}
+.architecture-page h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+.architecture-page p {
+  font-size: 2rem;
+  color: #666;
+  line-height: 1.5;
+}/*# sourceMappingURL=ArchitecturePage.css.map */

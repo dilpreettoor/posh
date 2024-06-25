@@ -1,0 +1,14 @@
+.contact {
+  margin: 1rem;
+  margin-left: 4rem;
+}
+
+.contact__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact__description {
+  font-size: 2.1rem;
+  line-height: 1.6;
+}/*# sourceMappingURL=contact.css.map */

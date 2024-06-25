@@ -1,0 +1,21 @@
+@media (min-width: 1280px) {
+  .interior-page {
+    display: flex;
+    border-bottom: 5px solid #E1E1E1;
+    justify-content: flex-end;
+  }
+}
+.interior-page__wrapper {
+  width: 50%;
+  margin: 2rem;
+}
+.interior-page h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+.interior-page p {
+  font-size: 2rem;
+  color: #666;
+  line-height: 1.5;
+}/*# sourceMappingURL=InteriorPage.css.map */
