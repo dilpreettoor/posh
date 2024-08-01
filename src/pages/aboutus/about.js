@@ -1,7 +1,10 @@
 import "./about.css";
+import Header from "../../components/Header/header";
 
 const AboutUs = () => {
   return (
+    <>
+    <Header/>
     <section className="about">
       <h2 className="about__title">About Posh Palette</h2>
       <p className="about__description">
@@ -14,6 +17,7 @@ const AboutUs = () => {
         that transcends time.
       </p>
     </section>
+    </>
   );
 };
 
