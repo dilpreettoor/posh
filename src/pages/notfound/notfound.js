@@ -1,9 +1,12 @@
 import React from "react";
 import Homer from "../../assets/Images/homer.png";
 import './notfound.css';
+import Header from "../../components/Header/header";
 
 const NotFound = () => {
   return (
+    <>
+    <Header/>
     <div className="notfound">
       <h2 className="notfound__heading">
         Oops, Looks Like You've Discovered an Empty Blueprint!
@@ -19,6 +22,7 @@ const NotFound = () => {
         alt="homer"
       />
     </div>
+    </>
   );
 }
 
