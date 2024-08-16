@@ -7,16 +7,37 @@ const Contact = () => {
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [showPopup, setShowPopup] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // form logic
+    console.log('Name: ', firstName + " " + lastName);
+    console.log('Email: ', email);
+    console.log('Message: ', message);
+    setFirstName('');
+    setLastName('');
+    setEmail('');
+    setMessage('');
+
+    setShowPopup(true);
+
+    // Hide popup after 3 seconds
+    setTimeout(() => setShowPopup(false), 3000);
   };
 
   return (
     <>
       <Header />
       <section className="contact">
+      {showPopup && (
+  <div className="popup">
+    <div className="popup__content">
+      <h3 className="popup__title">Success!</h3>
+      <p className="popup__message">Your message has been sent successfully.</p>
+    </div>
+  </div>
+)}
       <p className="contact__description">
             Ready to start your next project?
             Get in touch with us today for a free consultation to learn more about our design approach and discuss how we can help bring your vision to life.

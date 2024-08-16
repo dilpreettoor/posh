@@ -74,4 +74,44 @@
       }
     }
   }
+
+  .popup {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #28a745; /* Success Green */
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 1000;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  .popup__content {
+    max-width: 300px;
+  }
+  
+  .popup__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .popup__message {
+    font-size: 18px;
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeout {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+  
 }
