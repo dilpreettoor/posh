@@ -1,7 +1,7 @@
 import "./Background.css";
 import React, { useState, useEffect } from 'react';
 import day from "../../../assets/Images/dayImage.jpg";
-import night from "../../../assets/Images/nightImage.jpg";
+import night from "../../../assets/Images/nightImage.jpeg";
 
 const Background = ({ children }) => {
     const [isDay, setIsDay] = useState(true);
