@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/home/home';
 import Header from './components/Header/header';
+import Profile from './pages/profile/profile';
 import Footer from './components/Footer/Footer';
 import NotFound from "./pages/notfound/notfound";
 import AboutUs from "./pages/aboutus/about";
@@ -15,6 +16,7 @@ function App() {
     <Route path="/" element={<Home/>} />
       <Route path="/aboutus" element={<AboutUs/>} />
       <Route path="/contact" element={<Contact/>}/>
+      <Route path="/profile" element={<Profile/>}/>
       <Route path="*" element={<NotFound />} />
     </Routes>
     <Footer/>
